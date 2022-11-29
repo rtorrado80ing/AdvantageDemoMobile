@@ -1,4 +1,4 @@
-##**README SERENITY WEB ADVANTAGE**
+##**README SERENITY MOBILE ADVANTAGE**
 
 ##**Run tests with gradle:**
 

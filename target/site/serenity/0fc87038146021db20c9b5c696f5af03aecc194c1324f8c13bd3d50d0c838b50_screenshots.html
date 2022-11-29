@@ -1,0 +1,309 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">AdvantageDemoMobile</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="8b593a39c999abc740bcf886b57b56b5e63c1b06450779985fd83a687ed9b9b7.html">Buy Products In Advantage App</a></span>
+                > <span class="truncate-60"><a
+                    href="0fc87038146021db20c9b5c696f5af03aecc194c1324f8c13bd3d50d0c838b50.html">buy products </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 28-11-2022 21:14</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Buy Products In Advantage App </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                I as a user want to buy some products in the advantage app
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon fa-2x' title='FAILURE'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="failing-color">buy products
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element should be present exception: Expected condition failed: waiting for By.id: imageViewMenu to be present (tried for 5 second(s) with 100 milliseconds interval)Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'System info: host: 'DESKTOP-IH6LPG7', ip: '172.17.16.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'Driver info: driver.version: unknown</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBePresentException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>co.com.tcs.certification.advantage.tasks.BurgerMenuTask.performAs(BurgerMenuTask.java:11)<br />co.com.tcs.certification.advantage.stepdefinitions.BuyProductStepDefinitions.heHasSelectedSomeProductsAndAddTheProductToTheShoppingCart(BuyProductStepDefinitions.java:37)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:64)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:104)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:73)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:259)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:58)<br /></pre>
+                    </div>
+
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for By.id: imageViewMenu to be present (tried for 5 second(s) with 100 milliseconds interval)<br>Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'<br>System info: host: 'DESKTOP-IH6LPG7', ip: '172.17.16.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'<br>Driver info: driver.version: unknown</pre>
+                        <pre>co.com.tcs.certification.advantage.tasks.BurgerMenuTask.performAs(BurgerMenuTask.java :11)<br />co.com.tcs.certification.advantage.stepdefinitions.BuyProductStepDefinitions.heHasSelectedSomeProductsAndAddTheProductToTheShoppingCart(BuyProductStepDefinitions.java :37)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java :66)<br />io.cucumber.java.Invoker.invoke(Invoker.java :24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java :47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java :29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java :66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java :63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java :92)<br />io.cucumber.core.runner.TestStep.run(TestStep.java :64)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java :51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java :104)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java :73)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :135)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :27)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java :259)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java :58)<br /></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                <div class="panel-body">
+                    <a href="pagesource15449752777284713768.html" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="0f9dbf08141f287790996aeceec36034187e17f829ba135cc7a4d723dc13b0fe.png" title=" Given he is logged into the page Username  'rtorrado' and Password  'R1card080'" width="1080"/>
+                <img src="efe9e8a697429ef92f8aa27a45e625ad19be0e2d1620ec3b061e3a2b4a89deca.png" title=" Junior burger menu task" width="1080"/>
+                <img src="efe9e8a697429ef92f8aa27a45e625ad19be0e2d1620ec3b061e3a2b4a89deca.png" title=" Junior clicks on Burger Menu" width="1080"/>
+                <img src="ef142aeb58eaecc5da77a33a16a9487f9f6adda547599b2a9faa9ed3230bfbb2.png" title=" Junior clicks on Burger Menu (completed)" width="1080"/>
+                <img src="ef142aeb58eaecc5da77a33a16a9487f9f6adda547599b2a9faa9ed3230bfbb2.png" title=" Junior burger menu task (completed)" width="1080"/>
+                <img src="ef142aeb58eaecc5da77a33a16a9487f9f6adda547599b2a9faa9ed3230bfbb2.png" title=" Junior button login task" width="1080"/>
+                <img src="26ce0b1d021adbc14c01110e5cfa67df488014d7c7e346cd6f4dbf5fe65ea847.png" title=" Junior clicks on Button login" width="1080"/>
+                <img src="d6b99502420d337deb50c6d86fbbcfaa59f026ed0aae622d494b94b3bcfa7974.png" title=" Junior clicks on Button login (completed)" width="1080"/>
+                <img src="d6b99502420d337deb50c6d86fbbcfaa59f026ed0aae622d494b94b3bcfa7974.png" title=" Junior button login task (completed)" width="1080"/>
+                <img src="d6b99502420d337deb50c6d86fbbcfaa59f026ed0aae622d494b94b3bcfa7974.png" title=" Junior enters 'rtorrado' into Form login" width="1080"/>
+                <img src="39e5461f8038312ab479ccb7950a443800b301744b0b57b0a130d267de87e2f8.png" title=" Junior enters 'rtorrado' into Form login (completed)" width="1080"/>
+                <img src="39e5461f8038312ab479ccb7950a443800b301744b0b57b0a130d267de87e2f8.png" title=" Junior enters 'R1card080' into Password Login" width="1080"/>
+                <img src="9e113e628c10031f20712aa0f057d30d354cdba1d828e7c371ff9c9275125030.png" title=" Junior enters 'R1card080' into Password Login (completed)" width="1080"/>
+                <img src="9e113e628c10031f20712aa0f057d30d354cdba1d828e7c371ff9c9275125030.png" title=" Junior clicks on Button Login" width="1080"/>
+                <img src="1224c995cf9b6e648b40901f3d51bfe0702eb1e0ab27629785f4f684f4595d1c.png" title=" Junior clicks on Button Login (completed)" width="1080"/>
+                <img src="1224c995cf9b6e648b40901f3d51bfe0702eb1e0ab27629785f4f684f4595d1c.png" title=" Given he is logged into the page Username  'rtorrado' and Password  'R1card080' (completed)" width="1080"/>
+                <img src="1224c995cf9b6e648b40901f3d51bfe0702eb1e0ab27629785f4f684f4595d1c.png" title=" When he has selected some products and add the product to the shopping cart" width="1080"/>
+                <img src="d2a59029fdb32708172283311d440a4289188d9cdf8451c33209e9bc02cd644f.png" title=" Junior buy laptop interaction" width="1080"/>
+                <img src="d2a59029fdb32708172283311d440a4289188d9cdf8451c33209e9bc02cd644f.png" title=" Junior select laptops categ task" width="1080"/>
+                <img src="d2a59029fdb32708172283311d440a4289188d9cdf8451c33209e9bc02cd644f.png" title=" Junior clicks on " width="1080"/>
+                <img src="64c48f97879c2f9764ce34898d68a0be385cfaf6c5ced5365562e2702b8783be.png" title=" Junior clicks on  (completed)" width="1080"/>
+                <img src="64c48f97879c2f9764ce34898d68a0be385cfaf6c5ced5365562e2702b8783be.png" title=" Junior select laptops categ task (completed)" width="1080"/>
+                <img src="64c48f97879c2f9764ce34898d68a0be385cfaf6c5ced5365562e2702b8783be.png" title=" Junior clicks on //android.widget.RelativeLayout[@content-desc=&quot;Laptops&quot;]/android.widget.LinearLayout/android.widget.GridView/android.widget.RelativeLayout[1]" width="1080"/>
+                <img src="07be83b91cf0cd7aacc43394e94d0b2ced09b270594d1393b7d9a28605160369.png" title=" Junior clicks on //android.widget.RelativeLayout[@content-desc=&quot;Laptops&quot;]/android.widget.LinearLayout/android.widget.GridView/android.widget.RelativeLayout[1] (completed)" width="1080"/>
+                <img src="07be83b91cf0cd7aacc43394e94d0b2ced09b270594d1393b7d9a28605160369.png" title=" Junior clicks on " width="1080"/>
+                <img src="07be83b91cf0cd7aacc43394e94d0b2ced09b270594d1393b7d9a28605160369.png" title=" Junior clicks on  (completed)" width="1080"/>
+                <img src="07be83b91cf0cd7aacc43394e94d0b2ced09b270594d1393b7d9a28605160369.png" title=" Junior quantity interaction" width="1080"/>
+                <img src="07be83b91cf0cd7aacc43394e94d0b2ced09b270594d1393b7d9a28605160369.png" title=" Junior clicks on " width="1080"/>
+                <img src="e29951d9049b634e9919c01165d7aac946b5347de5df40ba2d69ec63345aaa10.png" title=" Junior clicks on  (completed)" width="1080"/>
+                <img src="e29951d9049b634e9919c01165d7aac946b5347de5df40ba2d69ec63345aaa10.png" title=" Junior clicks on " width="1080"/>
+                <img src="a7094a51acd3f00dee106badc65540f0bd9822cec1a1bdf7575623627b84eb81.png" title=" Junior clicks on  (completed)" width="1080"/>
+                <img src="a7094a51acd3f00dee106badc65540f0bd9822cec1a1bdf7575623627b84eb81.png" title=" Junior clicks on " width="1080"/>
+                <img src="773c3e8af7c477639f92b20316f2be407d8acc9cdbbd8261fa39a83690e05ecd.png" title=" Junior clicks on  (completed)" width="1080"/>
+                <img src="773c3e8af7c477639f92b20316f2be407d8acc9cdbbd8261fa39a83690e05ecd.png" title=" Junior quantity interaction (completed)" width="1080"/>
+                <img src="773c3e8af7c477639f92b20316f2be407d8acc9cdbbd8261fa39a83690e05ecd.png" title=" Junior clicks on " width="1080"/>
+                <img src="e97e153a4389f51a0333bdedabcfee2cc08bb9b5235fd3e31194458231934017.png" title=" Junior clicks on  (completed)" width="1080"/>
+                <img src="e97e153a4389f51a0333bdedabcfee2cc08bb9b5235fd3e31194458231934017.png" title=" Junior clicks on " width="1080"/>
+                <img src="2a17c8a9a85885505d669eb09800ad65e062ea83988fd8292c087cef2275f80c.png" title=" Junior clicks on  (completed)" width="1080"/>
+                <img src="2a17c8a9a85885505d669eb09800ad65e062ea83988fd8292c087cef2275f80c.png" title=" Junior clicks on " width="1080"/>
+                <img src="2a17c8a9a85885505d669eb09800ad65e062ea83988fd8292c087cef2275f80c.png" title=" Junior clicks on  (completed)" width="1080"/>
+                <img src="2a17c8a9a85885505d669eb09800ad65e062ea83988fd8292c087cef2275f80c.png" title=" Junior back interaction" width="1080"/>
+                <img src="2a17c8a9a85885505d669eb09800ad65e062ea83988fd8292c087cef2275f80c.png" title=" Junior clicks on " width="1080"/>
+                <img src="37fac3ff42477ecfd520aa834c09b746d96ab30778ca38814392ae6690324e21.png" title=" Junior clicks on  (completed)" width="1080"/>
+                <img src="37fac3ff42477ecfd520aa834c09b746d96ab30778ca38814392ae6690324e21.png" title=" Junior back interaction (completed)" width="1080"/>
+                <img src="37fac3ff42477ecfd520aa834c09b746d96ab30778ca38814392ae6690324e21.png" title=" Junior buy laptop interaction (completed)" width="1080"/>
+                <img src="37fac3ff42477ecfd520aa834c09b746d96ab30778ca38814392ae6690324e21.png" title=" Junior burger menu task" width="1080"/>
+                <img src="37fac3ff42477ecfd520aa834c09b746d96ab30778ca38814392ae6690324e21.png" title=" Junior clicks on Burger Menu" width="1080"/>
+                <img src="2a17c8a9a85885505d669eb09800ad65e062ea83988fd8292c087cef2275f80c.png" title=" Junior clicks on Burger Menu (completed): <span class='failing-color'>FAILURE</span>" width="1080"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.0.5</span>
+</div>
+</body>
+</html>
